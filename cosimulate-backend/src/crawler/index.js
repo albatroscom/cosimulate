@@ -63,7 +63,7 @@ const messageHandler = {
         const rest = polyfill._objectWithoutProperties(converted, 'name');
 
         try {
-            const updated = await ExchangeRate.updateTicker(name, rest);
+            await ExchangeRate.updateTicker(name, rest);
             console.log('[Update]', name, new Date());
         } catch (e) {
             console.error(e);
