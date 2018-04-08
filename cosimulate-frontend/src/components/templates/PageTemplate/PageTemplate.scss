@@ -1,0 +1,19 @@
+@import 'utils';
+
+.page {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 50;
+    }
+
+    .content {
+        background: black;
+        width: 1200px;
+        margin: 0 auto;
+        &.has-header {
+            padding-top: 3.5rem;
+        }
+    }
+}
